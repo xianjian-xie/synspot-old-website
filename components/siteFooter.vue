@@ -32,10 +32,10 @@
               </v-responsive>
             </template></div
         ></v-col>
-        <v-col class="text--secondary text-center text-md-right">
+        <!-- <v-col class="text--secondary text-center text-md-right">
           {{ new Date().getFullYear() }} ©
           <nuxt-link class="primary--text" to="/">ModeVue</nuxt-link>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </v-footer>
@@ -46,10 +46,12 @@ export default {
   data() {
     return {
       menu: [
-        { text: 'Support', link: '#' },
-        { text: 'Contact Us', link: '#' },
-        { text: 'Disclaimer', link: '#' },
-        { text: 'Covid-19 Operation', link: '#' },
+        {
+          text: 'Copyright © 2022 SynSpot. All rights reserved',
+          link: '#',
+        },
+        // { text: 'Contact Us', link: '#' },
+        // { text: 'Disclaimer', link: '#' },
       ],
     }
   },

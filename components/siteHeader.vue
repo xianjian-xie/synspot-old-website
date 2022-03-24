@@ -36,7 +36,16 @@
     <v-app-bar fixed app hide-on-scroll height="64" elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true" />
       <nuxt-link to="/" class="d-flex">
-        <Logo />
+        <img
+          src="../assets/l6.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        &nbsp; &nbsp;
+        <h2 class="text-md-h15 text-center font-weight-black">SynSpot</h2>
+        <!-- <Logo /> -->
       </nuxt-link>
       <v-spacer />
 
@@ -108,60 +117,60 @@ export default {
           to: '/',
         },
         {
-          icon: 'mdi-account',
-          title: 'About',
-          to: '/about',
+          icon: 'mdi-cash-usd',
+          title: 'products',
+          to: '/products',
         },
         {
           icon: 'mdi-tools',
-          title: 'Services',
-          to: '/services',
+          title: 'Resources',
+          to: '/resources',
           submenu: [
+            // {
+            //   title: 'Services Page',
+            //   to: '/services',
+            // },
             {
-              title: 'Services Page',
-              to: '/services',
-            },
-            {
-              title: 'Static Websites',
+              title: 'Docs',
               to: '/#',
             },
             {
-              title: 'Mobile Applications',
+              title: 'Tutorials',
               to: '/#',
             },
             {
-              title: 'Corporate websites',
-              to: '/#',
+              title: 'Use Cases',
+              to: '/usecases',
             },
-            {
-              title: 'Editorial Sites',
-              to: '/#',
-            },
-            {
-              title: 'Ecommerce and Store',
-              to: '/#',
-            },
-            {
-              title: 'Block Chain Devemopment',
-              to: '/#',
-            },
+            // {
+            //   title: 'Editorial Sites',
+            //   to: '/#',
+            // },
+            // {
+            //   title: 'Ecommerce and Store',
+            //   to: '/#',
+            // },
+            // {
+            //   title: 'Block Chain Devemopment',
+            //   to: '/#',
+            // },
           ],
         },
         {
-          icon: 'mdi-cash-usd',
-          title: 'Pricing',
-          to: '/pricing',
+          icon: 'mdi-account',
+          title: 'About Us',
+          to: '/about',
         },
-        {
-          icon: 'mdi-folder-image',
-          title: 'Gallery',
-          to: '/gallery',
-        },
-        {
-          icon: 'mdi-blogger',
-          title: 'Blog',
-          to: '/blog',
-        },
+        // {
+        //   icon: 'mdi-folder-image',
+        //   title: 'Gallery',
+        //   to: '/gallery',
+        // },
+        // {
+        //   icon: 'mdi-blogger',
+        //   title: 'Blog',
+        //   to: '/blog',
+        // },
         {
           icon: 'mdi-contacts',
           title: 'Contact',
@@ -185,5 +194,8 @@ export default {
 <style scoped>
 .submenubtn {
   cursor: default;
+}
+a {
+  text-decoration: none;
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <!-- home page rolling -->
   <section id="hero">
     <v-carousel
       height="calc(100vh - 64px)"
@@ -23,10 +24,10 @@
             </div>
             <p class="mb-5 white--text">{{ carousel.subHeading }}</p>
             <v-btn :x-large="$vuetify.breakpoint.smAndUp" class="my-3 primary"
-              >Get Started</v-btn
+              >Quick Start</v-btn
             >
             <span class="mx-2 my-4"></span>
-            <v-btn
+            <!-- <v-btn
               :x-large="$vuetify.breakpoint.smAndUp"
               text
               class="my-3"
@@ -34,7 +35,7 @@
               dark
               ><v-icon left large color="primary">mdi-play</v-icon>Learn
               More</v-btn
-            >
+            > -->
           </div>
         </v-container>
       </v-carousel-item>
@@ -49,27 +50,27 @@ export default {
       carouselsData: [
         {
           src: 'pexels-andrea-piacquadio-3884440.jpg',
-          heading: ' PROMOTE YOUR BUSINESS WITH US ',
+          heading: ' Build your model with our service ',
           subHeading:
-            'Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality. incubator seed round massmarket. buyer agile development growth hacking business-to-consumer ecosystem ',
+            ' SynSpot pptimize your AI model cooperatively with others without sharing data and model.',
         },
         {
           src: 'pexels-peter-olexa-4012966.jpg',
-          heading: ' LOREM IPSUM DOLOR SIT AMET CONSEETU',
+          heading: ' PROMOTE YOUR BUSINESS WITH US',
           subHeading:
-            'Litora a interdum primis. Lectus facilisi sit cum arcu aliquam velit imperdiet sapien suspendisse at vel facilisis. Facilisis metus, curae; nibh mi orci et. Fringilla sociis magna rutrum bibendum arcu.',
+            'SynSpot brings together millions of data science practitioners, data-driven enterprises, and the open source community.',
         },
         {
           src: 'pexels-thirdman-5961072.jpg',
-          heading: ' Build your website with this Theme ',
+          heading: ' TACKLE YOUR CHALLENGE',
           subHeading:
-            'Tellus cum turpis natoque id justo interdum tincidunt faucibus aptent congue pellentesque. Proin luctus orci netus! Scelerisque parturient cursus donec parturient et, luctus aptent habitant aliquet felis. Sapien placerat ultricies.',
+            'SynSpot solutions are serious technology for real data science and ML applications. You will be ready to solve problems in your daily life.',
         },
         {
           src: 'pexels-andrea-piacquadio-3830745.jpg',
-          heading: ' URNA TINCIDUNT MATTIS TORTOR ',
+          heading: ' OWN YOUR DESTINY ',
           subHeading:
-            'Dapibus cras, ligula suspendisse potenti himenaeos mus volutpat pulvinar est facilisi. Vehicula malesuada parturient euismod litora mollis penatibus. Penatibus cum nullam facilisi enim nisi ac suspendisse. Ullamcorper ad amet netus.',
+            'SynSpot is an open-source innovation which can keep pace with your needs and business challenges',
         },
       ],
     }

@@ -174,7 +174,7 @@ export default {
       heroAlt: [
         {
           src: 'pexels-andrea-piacquadio-3884440.jpg',
-          heading: ' Blog ',
+          heading: ' Use Cases ',
         },
       ],
       posts: [

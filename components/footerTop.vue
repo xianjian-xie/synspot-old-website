@@ -9,20 +9,32 @@
   >
     <v-container>
       <v-row>
-        <v-col cols="12" md="5" class="py-12"
+        <v-col cols="12" md="3" class="py-12"
           ><v-row no-gutters>
             <v-col cols="12">
-              <Logo />
+              <img
+                src="../assets/l6.png"
+                width="50"
+                height="50"
+                class="d-inline-block align-top"
+                alt=""
+              />
+
+              <!-- <Logo /> -->
             </v-col>
             <v-col cols="12">
-              <p class="mt-8 text-justify" style="max-width: 400px">
+              <h2 class="text-h4 text-md-h15 text-left font-weight-black mb-7">
+                <br />
+                For Beginnners or Professionals
+              </h2>
+              <!-- <p class="mt-8 text-justify" style="max-width: 400px">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
                 pariatur quidem, quis modi iure nihil commodi suscipit, corporis
                 dicta adipisci, voluptatum quia cupiditate. Nulla minus
                 voluptatum nostrum deleniti, asperiores facere.
-              </p>
+              </p> -->
             </v-col>
-            <v-col cols="12">
+            <!-- <v-col cols="12">
               <v-list two-line class="transparent">
                 <v-list-item>
                   <v-list-item-icon>
@@ -82,15 +94,107 @@
                   <v-icon>{{ socialm.icon }}</v-icon>
                 </v-btn>
               </div>
-            </v-col>
+            </v-col> -->
           </v-row></v-col
         >
         <v-col cols="1" class="text-center hidden-sm-and-down col col-2 py-12">
           <v-divider vertical></v-divider>
         </v-col>
-        <v-col cols="12" md="5" class="py-12">
-          <h3 class="mb-8">SEND YOUR MESSAGE</h3>
-          <footerContactForm />
+
+        <v-col cols="12" md="7" class="py-12">
+          <v-row>
+            <!-- <h3 class="mb-8">SEND YOUR MESSAGE</h3> -->
+            <!-- Grid column -->
+            <v-col cols="12" md="3" class="py-12">
+              <!-- Links -->
+              <h3 class="mb-8"><a href="/products">PRODUCTS</a></h3>
+              <!-- <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+            /> -->
+              <!-- <p>
+                <a href="#!">MDBootstrap</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">MDWordPress</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">BrandFlow</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p> -->
+            </v-col>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <v-col cols="12" md="3" class="py-12">
+              <!-- Links -->
+              <h3 class="mb-8"><a href="#!">RESOURCES</a></h3>
+              <!-- <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+            /> -->
+              <p>
+                <a href="#!">Docs</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Tutorials</a>
+              </p>
+              <p>
+                <a href="/usecases" class="text-white">Use Cases</a>
+              </p>
+              <!-- <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p> -->
+            </v-col>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <v-col cols="12" md="3" class="py-12">
+              <!-- Links -->
+              <h3 class="mb-8"><a href="/about">ABOUT US</a></h3>
+              <!-- <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+            /> -->
+              <!-- <p>
+                <a href="#!">MDBootstrap</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">MDWordPress</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">BrandFlow</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p> -->
+            </v-col>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <v-col cols="12" md="3" class="py-12">
+              <!-- Links -->
+              <h3 class="mb-8"><a href="/contact">CONTACT</a></h3>
+              <!-- <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+            /> -->
+              <!-- <p>
+                <a href="#!">MDBootstrap</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">MDWordPress</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">BrandFlow</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p> -->
+            </v-col>
+            <!-- Grid column -->
+          </v-row>
+
+          <!-- <footerContactForm /> -->
         </v-col>
       </v-row>
     </v-container>
@@ -98,11 +202,11 @@
 </template>
 
 <script>
-import footerContactForm from '~/components/sections/footerContactForm.vue'
+// import footerContactForm from '~/components/sections/footerContactForm.vue'
 export default {
-  components: {
-    footerContactForm,
-  },
+  // components: {
+  //   footerContactForm,
+  // },
   data() {
     return {
       social: [
@@ -136,3 +240,9 @@ export default {
   },
 }
 </script>
+
+<style>
+a {
+  text-decoration: none;
+}
+</style>

@@ -6,15 +6,16 @@
           <v-icon x-large dark>mdi-web</v-icon>
         </v-avatar>
         <h2 class="text-h4 text-md-h3 text-center font-weight-black mb-7">
-          The Perfect Theme for Beginners or Professionals
+          The Perfect Application for Beginners or Professionals
         </h2>
         <p class="title font-weight-light">
-          ModeVue — is a carefully crafted multi-purpose, responsive, and
-          gorgeous theme. Built with
+          SynSpot — is a carefully crafted multi-purpose, responsive, and
+          gorgeous application built with
           <strong>Vue.js</strong>
           and
-          <strong>Nuxt.js</strong>, it comes with the features you need to
-          quickly start developing your application.
+          <strong>Python</strong>. It comes with the features you need to
+          quickly start your data analysis, optimize your AI model cooperatively
+          with others without sharing local data.
         </p>
       </v-responsive>
 
@@ -58,15 +59,15 @@ export default {
           callout: '01',
         },
         {
-          title: 'Fast & optimized',
+          title: 'Fast & Low Cost',
           subtitle: 'Performance',
-          text: 'Themes are designed for maximum performance and are semantically structured to maximize SEO.',
+          text: 'SynSpot offers fast Decentralized Machine Learning as a service at a lower cost.',
           callout: '02',
         },
         {
-          title: 'Built on Vuetify',
-          subtitle: 'Material Design',
-          text: "Being developed with Vuetify means you have access to all of the framework's available features.",
+          title: 'Collaborative',
+          subtitle: 'Motivation',
+          text: 'SynSpot enables easier collaboration across organizations from various industries without sharing sensitive data',
           callout: '03',
         },
       ],

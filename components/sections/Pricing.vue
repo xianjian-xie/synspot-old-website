@@ -8,7 +8,7 @@
               <h2
                 class="text-h4 text-md-h3 text-center font-weight-black text-capitalize mb-4"
               >
-                The most affordable pricing
+                SynSpot Download
               </h2>
 
               <p class="my-10 title">
@@ -16,7 +16,7 @@
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                 aliquam erat volutpat.
               </p>
-              <div class="text-center">
+              <!-- <div class="text-center">
                 <v-btn-toggle
                   v-model="planDuration"
                   active-class="primary darken-1"
@@ -28,7 +28,7 @@
                   <v-btn value="monthly"> Monthly Plan </v-btn>
                   <v-btn value="yearly"> Yearly Plan </v-btn>
                 </v-btn-toggle>
-              </div>
+              </div> -->
             </v-col>
           </v-row>
         </v-col>
@@ -36,7 +36,7 @@
     </v-container>
     <v-container fluid>
       <v-row class="mx-auto" style="max-width: 1200px">
-        <v-col v-for="(plan, ix) in plans" :key="`plan-${ix}`" cols="12" md="4">
+        <v-col v-for="(plan, ix) in plans" :key="`plan-${ix}`" cols="12" md="6">
           <v-hover v-slot="{ hover }">
             <v-card
               :elevation="hover ? 24 : plan.elevation"
@@ -53,15 +53,15 @@
                 class="text-center subtitle-1 white--text py-2"
                 v-text="plan.description"
               ></v-card-text>
-              <v-card-subtitle
+              <!-- <v-card-subtitle
                 class="text-h5 font-weight-black text-center white--text pt-0"
                 >{{ planDuration === 'monthly' ? plan.monthly : plan.yearly }}
                 <span class="subtitle-1"
                   >per {{ planDuration === 'monthly' ? 'month' : 'year' }}</span
                 ></v-card-subtitle
-              >
+              > -->
               <v-list>
-                <v-list-item
+                <!-- <v-list-item
                   v-for="(feature, ik) in plan.features"
                   :key="`feature-${ik}`"
                   dense
@@ -77,7 +77,7 @@
                       v-text="feature.text"
                     ></v-list-item-title>
                   </v-list-item-content>
-                </v-list-item>
+                </v-list-item> -->
                 <v-list-item>
                   <v-btn
                     color="primary"
@@ -86,7 +86,7 @@
                     rounded
                     class="mx-auto my-3"
                   >
-                    Buy Now
+                    Download Now
                   </v-btn>
                 </v-list-item>
               </v-list>
@@ -105,10 +105,10 @@ export default {
       planDuration: 'monthly',
       plans: [
         {
-          plan: 'Basic',
+          plan: 'Windows',
           elevation: 0,
           color: 'primary darken-1',
-          description: 'Best Plan for Small Businesses',
+          description: 'For Windows •  Graphical Installer • 515 MB',
           monthly: '$10',
           yearly: '$100',
           features: [
@@ -143,10 +143,10 @@ export default {
           ],
         },
         {
-          plan: 'Silver',
+          plan: 'MacOS',
           elevation: 16,
           color: 'green darken-2',
-          description: 'Best Plan for Professional Users',
+          description: 'For MacOS •  Graphical Installer • 515 MB',
           monthly: '$40',
           yearly: '$400',
           features: [
@@ -180,44 +180,44 @@ export default {
             },
           ],
         },
-        {
-          plan: 'Gold',
-          elevation: 0,
-          color: 'orange darken-3',
-          description: 'Best Plan for Power Users',
-          monthly: '$100',
-          yearly: '$1000',
-          features: [
-            {
-              icon: 'mdi-web',
-              text: 'unlimited websites',
-            },
-            {
-              icon: 'mdi-harddisk',
-              text: 'unlimited storage',
-            },
-            {
-              icon: 'mdi-signal',
-              text: 'unlimited bandwidth',
-            },
-            {
-              icon: 'mdi-account',
-              text: 'unlimited addreses',
-            },
-            {
-              icon: 'mdi-domain',
-              text: 'free domain with annual plan',
-            },
-            {
-              icon: 'mdi-server',
-              text: '4X pricessing power',
-            },
-            {
-              icon: 'mdi-dns',
-              text: 'premium DNS',
-            },
-          ],
-        },
+        // {
+        //   plan: 'Gold',
+        //   elevation: 0,
+        //   color: 'orange darken-3',
+        //   description: 'Best Plan for Power Users',
+        //   monthly: '$100',
+        //   yearly: '$1000',
+        //   features: [
+        //     {
+        //       icon: 'mdi-web',
+        //       text: 'unlimited websites',
+        //     },
+        //     {
+        //       icon: 'mdi-harddisk',
+        //       text: 'unlimited storage',
+        //     },
+        //     {
+        //       icon: 'mdi-signal',
+        //       text: 'unlimited bandwidth',
+        //     },
+        //     {
+        //       icon: 'mdi-account',
+        //       text: 'unlimited addreses',
+        //     },
+        //     {
+        //       icon: 'mdi-domain',
+        //       text: 'free domain with annual plan',
+        //     },
+        //     {
+        //       icon: 'mdi-server',
+        //       text: '4X pricessing power',
+        //     },
+        //     {
+        //       icon: 'mdi-dns',
+        //       text: 'premium DNS',
+        //     },
+        //   ],
+        // },
       ],
     }
   },
