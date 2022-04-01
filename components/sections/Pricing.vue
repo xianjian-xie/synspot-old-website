@@ -86,7 +86,15 @@
                     rounded
                     class="mx-auto my-3"
                   >
-                    Download Now
+                    <a href="/file/SynSpot-0.0.1-b.dmg" download
+                      >Download Now</a
+                    >
+                    <!-- <a href="/html/index.html">html</a> -->
+                    <!-- <a
+                      href="https://docutils-zh-cn.readthedocs.io/zh_CN/latest/user/rst/cheatsheet.html"
+                      target="_blank"
+                      >Vue.js</a
+                    > -->
                   </v-btn>
                 </v-list-item>
               </v-list>
@@ -231,5 +239,9 @@ export default {
 }
 .notzoom {
   transition: transform 0.2s;
+}
+a {
+  text-decoration: none;
+  color: rgb(247, 243, 243);
 }
 </style>

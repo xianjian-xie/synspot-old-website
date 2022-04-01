@@ -48,7 +48,7 @@
         <!-- <Logo /> -->
       </nuxt-link>
       <v-spacer />
-
+      <!-- submenu item -->
       <template v-for="(name, menuitem) in items">
         <template v-if="name.submenu">
           <v-menu
@@ -72,6 +72,13 @@
               </v-btn>
             </template>
             <v-list dense>
+              <v-list-item>
+                <v-list-item-title
+                  ><a href="/html/index.html"
+                    >Documentation</a
+                  ></v-list-item-title
+                >
+              </v-list-item>
               <v-list-item
                 v-for="(item, index) in name.submenu"
                 :key="index"
@@ -83,6 +90,7 @@
             </v-list>
           </v-menu>
         </template>
+        <!-- no submenu item -->
         <v-btn
           v-else
           :key="menuitem"
@@ -105,6 +113,7 @@
 </template>
 
 <script>
+// import Docs from '../static/html/index.html'
 export default {
   data() {
     return {
@@ -130,14 +139,34 @@ export default {
             //   title: 'Services Page',
             //   to: '/services',
             // },
-            {
-              title: 'Docs',
-              to: '/#',
-            },
+            // {
+            //   title: 'Docs',
+            //   to: '/docs',
+            //   // {
+            //   //   path: '/docs',
+            //   //   mode: history,
+            //   //   name: 'docs',
+            //   //   component: { template: Docs },
+            //   // },
+            //   // {
+            //   //   path: '/docs',
+            //   //   name: 'docs',
+            //   //   component: () => import('../static/html/index.html'),
+            //   // },
+            // },
             {
               title: 'Tutorials',
-              to: '/#',
+              to: '/tutorials',
             },
+            // {
+            //   title: 'Tutorials',
+            //   to: {
+            //     path: '/tutorials',
+            //     mode: history,
+            //     name: 'tutorials',
+            //     component: Docs,
+            //   },
+            // },
             {
               title: 'Use Cases',
               to: '/usecases',
@@ -197,5 +226,6 @@ export default {
 }
 a {
   text-decoration: none;
+  color: rgb(7, 0, 0);
 }
 </style>

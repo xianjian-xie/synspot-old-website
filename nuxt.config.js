@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+// import htmlloader from 'html-loader'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -91,7 +92,15 @@ export default {
         options: {
           fix: true,
         },
-      })
+      },
+      {
+        test: /\.(html)$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'html-loader'
+        }
+      }
+    )
     },
   },
 }
